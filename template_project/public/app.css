@@ -1,0 +1,113 @@
+.login-heading {
+  color: black;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.login-card {
+  margin-bottom: 6rem;
+}
+
+
+/* Tooltips */
+.icon-style {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.icon-container::before,
+.icon-container::after {
+  --scale: 0;
+  --arrow-size: 10px;
+  --tooltip-color: #333; 
+
+  position: absolute;
+  top: 0.25rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: top center;
+}
+
+.icon-container::before {
+  --translate-y: calc(70% - var(--arrow-size));
+
+  content: attr(data-tooltip);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  width: max-content;
+  /* max-width: 100% --> This will start wrapping content to not exceed the width of the container. */
+  background: var(--tooltip-color);
+}
+
+.icon-container:hover::before,
+.icon-container:hover::after {
+  --scale: 1;
+}
+
+.icon-container::after {
+  content: '';
+  border: var(--arrow-size) solid transparent;
+  border-bottom-color: var(--tooltip-color);
+  transform-origin: bottom center;
+}
+
+
+.card-header h1 {
+  position: relative;
+  top: 18px;
+  right: 10px;
+}
+
+.card-header img {
+  float: right;
+  width: 24px;
+  height: 24px;
+}
+
+.navbar-colors {
+  background-color: rgb(34, 187, 192);
+  color: white;
+}
+
+.jumbotron {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  background-image: url(/assets/jumbotronbackground.png);
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+.pageHeader {
+  font-size: 40px;
+}
+
+.btn-primary {
+  background: rgb(34, 187, 192);
+}
+
+.btn-full {
+  display: flex;
+  flex-grow: 1;
+}
+
+.dashMetric {
+  background: rgb(34, 187, 192);
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: 1px solid rgb(34, 187, 192);
+  border-radius: 5px;
+  box-shadow: 2px 2px lightgray;
+  color: white;
+}
+
+.footer {
+  margin-top: 2rem;
+}

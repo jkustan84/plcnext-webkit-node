@@ -1,0 +1,38 @@
+{
+  "name": "Sparkplug",
+  "version": "v1.0.1a",
+  "description": "An example Sparkplug B module written in JavaScript",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "eventemitter2": "^6.4.3",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.1",
+    "ip": "^1.1.5",
+    "jsonwebtoken": "^8.5.1",
+    "live-server": "^1.2.1",
+    "pako": "^1.0.6",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "pm2-logrotate": "^2.7.0",
+    "promisify": "0.0.3",
+    "socket.io": "^2.3.0",
+    "time-stamp": "^2.2.0",
+    "uniqid": "^5.2.0",
+    "winston": "^3.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
