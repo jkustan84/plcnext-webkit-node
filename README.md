@@ -1,6 +1,7 @@
 # NodeJS Webkit for PLCnext
 
-Procedure for Preparing a PLCnext Runtime-based Device for a NodeJS Application.
+This repository serves as an example and a template for creating custom HTML5 interfaces on PLCnext devices, but outside of the PLCnext engineering environment. Also covered is the PLCnext API for linking PLCnext data to a custom HTML5 interface project. The following procedure outlines it's installation and use.
+
 <br></br>
 ## **Shell Access**
 From a terminal emulator (such as Putty) to an out-the-box PLCnext controller:
@@ -9,8 +10,10 @@ From a terminal emulator (such as Putty) to an out-the-box PLCnext controller:
 
 The password can be found on the front of the controller.
 <br></br>
+<br></br>
 ## **Root Access**
 In /etc/ssh/ @ file sshd_config, uncomment line "PermitRootLogin yes". This will allow ssh as root again. Root will be required for many of the operations below. If this procedure is giving you trouble, just login as admin and su root (assuming you already gave the root user a password via sudo passwd root).
+<br></br>
 <br></br>
 ## **Firmware Version**
 To check for the current firmware version of the PLCnext device, in /etc/plcnext:
@@ -65,6 +68,8 @@ Use *template_project* in this repository as a guide for one way to implement a 
 <br></br>
 # **Additional Packages**
 Some helpful packages that may be required for you to accomplish your application goals.
+
+<br></br>
 ## **PM2**
 Used for scheduling NodeJS applications. Install PM2:
 
@@ -125,6 +130,8 @@ Import the DB export into the placeholder DB:
 <br></br>
 # **Nginx Web Server Configurations**
 Some guidelines for modifying the Nginx web server configuration.
+<br></br>
+
 ## **nginx.conf**
 Node may require a reverse proxy in order to serve a node-based web interface. In /etc/nginx/ @ file nginx.conf, under server, add the location (with your apps port number):
 
