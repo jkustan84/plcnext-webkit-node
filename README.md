@@ -1,8 +1,13 @@
 # NodeJS Webkit for PLCnext
 
-This repository serves as an example and a template for creating custom HTML5 interfaces on PLCnext devices, but outside of the PLCnext engineering environment. Also covered is the PLCnext API for linking PLCnext data to a custom HTML5 interface project. The following procedure outlines it's installation and use.
+This repository serves as an example and a template for creating a full stack NodeJS application on a PLCnext device. The PLCnext web API, which can be used for linking PLCnext data to custom applications, is also supported here. Suggestions on device configuration, data storage, and application scheduling are given throughout.
+
+![template project login](readme_img/nodejs_webkit_login.png)
+
+![template project login](readme_img/nodejs_webkit_dashboard.png)
 
 <br></br>
+# Getting Started
 ## **Shell Access**
 From a terminal emulator (such as Putty) to an out-the-box PLCnext controller:
 
@@ -129,7 +134,7 @@ Import the DB export into the placeholder DB:
 
 <br></br>
 # **Nginx Web Server Configurations**
-Some guidelines for modifying the Nginx web server configuration.
+Some guidelines for modifying the default Nginx web server configuration for a better user experience.
 <br></br>
 
 ## **nginx.conf**
